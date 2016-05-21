@@ -1,10 +1,10 @@
-# Google Analytics Debugger Extension
+# Hooptap Debugger Extension
 
-![Google Analytics Debugger in Chrome (above) and Firefox (below)](screengrab.png)
+![Hooptap Debugger in Chrome (above) and Firefox (below)](screengrab.png)
 
-Google Analytics Debugger is a devtools extension for Chrome, Firefox and Opera that exposes tracking beacon data to developers so they can test their analytics implementations. The extension will capture tracking beacons from Classic/Traditional Analytics and Universal Analytics.
+Hooptap Debugger is a devtools extension for Chrome, Firefox and Opera that exposes tracking beacon data to developers so they can test their analytics implementations. The extension will capture tracking beacons from Classic/Traditional Analytics and Universal Analytics.
 
-Google Analytics Debugger will log the following interactions and data:
+Hooptap Debugger will log the following interactions and data:
 
 * Page views
 * Events
@@ -48,13 +48,13 @@ This will build the core, the browser extensions and start a watch task. If you 
 
 ### Chrome
 
-First, make sure you've built the chrome extension. Browse to [chrome://extensions](chrome://extensions/), tick the **'Developer mode'** option, click **'Load unpacked extension'** and select the `build/chrome` folder. If all goes well, when you open/restart devtools you should see a **'GA Debugger'** panel.
+First, make sure you've built the chrome extension. Browse to [chrome://extensions](chrome://extensions/), tick the **'Developer mode'** option, click **'Load unpacked extension'** and select the `build/chrome` folder. If all goes well, when you open/restart devtools you should see a **'HT Debugger'** panel.
 
 If you modify the core or chrome source code you'll need to rebuild the extension (the watch task will do this for you) and then restart devtools to see your changes.
 
 ### Firefox
 
-First, make sure you've built the Firefox add-on. Browse to your Firefox profile, find the extensions folder and create a new text file named `gadebugger@browserextensions.keithclark.co.uk`, paste the path to the Firefox build directoy and restart firefox.
+First, make sure you've built the Firefox add-on. Browse to your Firefox profile, find the extensions folder and create a new text file named `browserextensions@hooptaplabs.com`, paste the path to the Firefox build directoy and restart firefox.
 
 If you modify the core or add-on source code you'll need to rebuild the extension (the watch task will do this for you) and then restart devtools to see your changes.
 
@@ -72,4 +72,4 @@ The `dist` task will package each extension into its distributable format, ready
 
 ## Notes
 
-The GA debugger repository contains GACore and the browser extensions. GACore is a library for inspecting Google Analytics tracking beacons and is used by all browser extensions. GACore can also stand alone if required.
+The HT debugger repository contains HTCore and the browser extensions. HTCore is a library for inspecting Hooptap tracking beacons and is used by all browser extensions. HTCore can also stand alone if required.

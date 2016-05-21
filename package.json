@@ -1,15 +1,15 @@
 {
-  "name": "gadebugger",
-  "description": "A browser extension for debugging Google Analytics tracking code",
+  "name": "htdebugger",
+  "description": "A browser extension for debugging Hooptap Api",
   "version": "2.1.2",
-  "homepage": "http://github.com/keithclark/gadebugger",
+  "homepage": "https://github.com/Hooptaplabs/htdebugger",
   "author": {
-    "name": "Keith Clark",
-    "url": "http://keithclark.co.uk"
+    "name": "Hooptaplabs",
+    "url": "http://www.hooptap.com"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/keithclark/gadebugger.git"
+    "url": "https://github.com/Hooptaplabs/htdebugger.git"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -21,6 +21,6 @@
     "grunt-contrib-compress": "~0.12.0"
   },
   "gadebuggerMeta": {
-    "title": "Google Analytics Debugger"
+    "title": "Hooptap Debugger"
   }
 }
